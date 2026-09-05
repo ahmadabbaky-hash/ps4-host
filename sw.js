@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ps4-host-v1';
+const CACHE_NAME = 'ps4-host-v2';
 const urlsToCache = [
   './',
   './index.html',
