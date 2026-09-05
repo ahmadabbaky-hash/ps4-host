@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4 Host - أحمد عبد الباقي</title>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 30px; margin: 0; }
+        h1 { color: #0072ce; font-size: 28px; margin-bottom: 5px; }
+        h2 { color: #aaaaaa; font-size: 16px; margin-bottom: 30px; }
+        .container { max-width: 600px; margin: 0 auto; background: #1e1e1e; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .btn { display: block; width: 90%; margin: 12px auto; padding: 14px; background: #00439c; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .btn:hover { background: #0072ce; transform: scale(1.02); }
+        .footer { margin-top: 30px; color: #666; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مضيف ثغرات PS4</h1>
+        <h2>اختر إصدار السوفت وير الخاص بجهازك</h2>
+        
+        <button class="btn" onclick="loadPage('505')">FW 5.05</button>
+        <button class="btn" onclick="loadPage('672')">FW 6.72</button>
+        <button class="btn" onclick="loadPage('755')">FW 7.55</button>
+        <button class="btn" onclick="loadPage('900')">FW 9.00</button>
+        <button class="btn" onclick="loadPage('1100')">FW 11.00 (PPPwn)</button>
+    </div>
+
+    <div class="footer">
+        <p>PS4 Exploit Host | Created for Custom Firmware Tools</p>
+    </div>
+
+    <script>
+        function loadPage(fw) {
+            window.location.href = "./firmware/" + fw + "/index.html";
+        }
+    </script>
+</body>
+</html>
