@@ -6,8 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>
-محمد خالد للشروحات 07714434273
-</title>
+ا</titleاحمد عبد الباقي 01030013388
 
 <style>
 
@@ -1104,5 +1103,15 @@ window.poopsError = function () {
 </script>
 
 
-</body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./sw.js').then(function(registration) {
+        console.log('ServiceWorker registered successfully');
+      }, function(err) {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script></body>
 </html>
