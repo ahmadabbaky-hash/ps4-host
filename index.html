@@ -86,7 +86,6 @@
       border-radius: 8px;
     }
 
-    /* شبكة أزرار الثغرات */
     .payloads-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -147,11 +146,15 @@
       margin-top: 3px;
     }
   </style>
+  <script src="int64.js"></script>
+  <script src="mem.js"></script>
+  <script src="core.js"></script>
+  <script src="chain_lapse.js"></script>
+  <script src="chain_poops.js"></script>
 </head>
 
 <body>
 
-  <!-- لوجو الأهلي في أعلى اليمين -->
   <div class="ahly-logo-container">
     <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/Al_Ahly_SC_logo.svg" alt="Al Ahly SC">
   </div>
@@ -162,21 +165,14 @@
 
     <a href="tel:01030013388" class="phone-btn">01030013388</a>
 
-    <div class="status-text" id="status">جاهز لتشغيل الثغرة...</div>
+    <div class="status-text" id="status">جاهز لتشغيل ثغرة 12.50...</div>
 
-    <!-- شبكة أزرار الثغرات والحمولات -->
     <div class="payloads-grid">
-      <!-- زر GoldHEN الرئيسي -->
-      <button class="btn-payload btn-goldhen" onclick="loadPayload('goldhen.bin')">GoldHEN v2.3</button>
-
-      <!-- أزرار الأدوات والحمولات الإضافية -->
+      <button class="btn-payload btn-goldhen" onclick="loadPayload('payload.bin')">GoldHEN 12.50</button>
       <button class="btn-payload" onclick="loadPayload('app2usb.bin')">App2USB</button>
-      <button class="btn-payload" onclick="loadPayload('backup.bin')">DB Backup</button>
       <button class="btn-payload" onclick="loadPayload('disableupdates.bin')">Disable Updates</button>
-      <button class="btn-payload" onclick="loadPayload('ps4debug.bin')">PS4Debug</button>
     </div>
 
-    <!-- قسم الحقوق باسمك -->
     <div class="footer-section">
       <div class="footer-title">أحمد عبد الباقي</div>
       <div class="footer-sub">AHMED ABDELBAKY</div>
@@ -185,8 +181,7 @@
 
   <script>
     function loadPayload(payloadFile) {
-      document.getElementById('status').innerHTML = "جاري تحميل: " + payloadFile + "...";
-      // استدعاء دالة تشغيل الثغرة المربوطة بالسكربتات لديك
+      document.getElementById('status').innerHTML = "جاري تحميل ثغرة " + payloadFile + " لسوفت 12.50...";
       if (typeof main === 'function') {
         main(payloadFile);
       } else if (typeof runPayload === 'function') {
