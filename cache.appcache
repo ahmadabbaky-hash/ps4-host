@@ -1,12 +1,11 @@
 CACHE MANIFEST
-# v6 - Ahmad Abbaky Host
+# v7 - Ahmad Abbaky Host (Firmware 13.00)
 
 index.html
 payload.bin
 chain_lapse.js
 chain_poops.js
 core.js
-core.js_query_v=10
 int64.js
 mem.js
 https://upload.wikimedia.org/wikipedia/en/a/a2/Al_Ahly_SC_logo.svg
